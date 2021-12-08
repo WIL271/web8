@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор стоимости заказа</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- Bootstrap Bundle JS (jsDelivr CDN) -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <title>Гипперссылки</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="osnov ">
+<header class="row justify-content-center">
+    <div id="header" class=" row col col-12 col-sm-8 align-items-end p-0">
+        <div class="row align-items-end  m-0" id="header-container">
+            <div class="col col-2 col-sm-2 m-0 p-0 mb-3"><img  src="Rickangry.jpg" alt="Логотип компании" width="100" height="100"><h1>Гипперссылки</h1></div>
+
+        </div>
+    </div>
+</header>
+
+<div class="row justify-content-center pt-5" id="topnav">
+    <div class="row col-12 col-sm-8 m-0 p-0" id="navigation">
+        <div class="col-sm-4"><a href="#info">О нас</a></div>
+        <div class="col-sm-4"><a href="#contact">Контакты</a></div>
+        <div class="col-sm-4"><a href="#FAQ">FAQ</a></div>
+    </div>
+
+    <div class="pt-5"></div>
+
+    <div class="wrapper">
+        <div style="text-align: center;" > <a role="button" href="#popup" class="header_phone popup-link btn btn-success" id = "for-popup-form">Popap</a></div>
+        <div class="popup-overlay" id = "popup">
+            <div class="popWindow popup-main-window">
+                <div class="close-btn">&times;</div>
+
+                <div class="row my-4">
+                    <h2 class="form-text">Отправка данных на почту</h2>
+                </div>
+                <form method="POST" class="row mx-5 my-2 gy-1 popup-form">
+                    <div class="form_item form-group">
+                        <label for="formName" style="color: black;">Имя:</label>
+                        <input type="text" class="form_input _req form-control w-75 shadow bg-white rounded" name = "popup-name" id="formName" placeholder="Enter Username" required>
+                        <small class="form-text text-muted">Введите ваше имя</small>
+                    </div>
+                    <div class="form_item form-group">
+                        <label for="formEmail" style="color: black;">E-mail:</label>
+                        <input type="email" class="form_input _req _email form-control w-75 shadow bg-white rounded" id="formEmail" name = "popup-email" required placeholder="Enter E-mail:" >
+                        <small class="form-text text-muted">Введите один из следующих email: mail.ru,.com,.yandex</small>
+                    </div>
+                    <div class="form_item form-group w-75">
+                        <label for="formMessage" style="color: black;">Сообщение:</label>
+                        <textarea name="popup-message" class="form_input _req form-control shadow bg-white rounded" id="form">
+                        </textarea>
+                        <small class="form-text text-muted">Необязательное поле</small>
+                    </div>
+                    <div class="form-check">
+                        <label id="soglasie " class="checkbox_label form-check-label">С контрактом ознакомлен(а)  </label>
+                        <input for="soglasie" checked type="checkbox" name="popup-checkbox" class="checkbox_input form-check-input" style="color: black;">
+                    </div>
+                    <label class = "col-12"><input type = "submit" name = "popup-submit" class = "popup-submit"></label>
+                </form>
+            </div>
+            <br>
+            <div class="popWindow thank-you-window">
+                <div class="close-btn">&times;</div>
+                <br><br>
+                <p class = "thank-you-message">
+                    Ваше cообщение отправлено!
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="pt-5"></div>
+<p>Я наконец-то закончил</p>
+
+<footer class="row justify-content-center">
+    <p class="bottom"><small> (c) Котельников Владислав, 2021</small></p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="main.js" defer></script>
+</body>
+</html>
