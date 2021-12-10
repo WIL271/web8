@@ -24,18 +24,13 @@ $(function() {
         event.stopPropagation();
     });
 
-    //сохраним в localstorage данные формы
-    // localStorage.setItem("name", $('[name = "popup-name"]'));
-    // localStorage.setItem("email", $('[name = "popup-email"]'));
-    // localStorage.setItem("textarea", $('[name = "popup-message"]'));
-
     // popup form
     $(".popup-form").submit(function() {
         var th = $(this);
         $(".popup-submit").prop('disabled', true);
         $.ajax({
             type: "POST",
-            url: "https://formcarry.com/s/eCvKm6T8t7n",
+            url: "https://formcarry.com/s/0E9dIKmZD5e",
             data: th.serialize(),
         })
         //.done(function() {
